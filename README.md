@@ -1,3 +1,3 @@
 # Responsive-Webpage
 
-This is a custom Website which was responsively created.
+This is a custom responsive website.
