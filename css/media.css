@@ -12,16 +12,31 @@
 }
 
 @media (max-width: 1024px) {
-  label #sign-one {
+  /* label #sign-one {
     display: block;
-  }
+  } */
 
   .logo {
     font-size: 40px;
     padding-left: 50px;
   }
+}
 
-  .nav-items {
+@media (max-width: 483px) {
+  label {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navmenu {
+    display: none;
+  }
+  label #sign-one {
+    display: block;
+  }
+
+ .nav-items {
     display: block;
     position: fixed;
     width: 100%;
@@ -29,36 +44,36 @@
     top: -37%;
     left: 0;
     text-align: center;
-    transition: all 0.5s;
     z-index: 10;
     padding-bottom: 10px;
   }
-
+  
   .item {
     display: block;
     margin: 20px 0;
     line-height: 60px;
   }
-
+  
   .nav-link {
     font-size: 50px;
+  } 
+  
+  #res-menu:checked ~ #navmenu {
+    display: block;
+    background-color: #ee6c4d;
+    position: relative;
+    position: fixed;
+    transition: all 0.5s ease-in-out;
+    top: 102px;
   }
-
+  /* #res-menu:checked ~ .nav-items {
+    top: 8%;
+  }   */
   #res-menu:checked + label #sign-one {
     display: none;
   }
 
   #res-menu:checked + label #sign-two {
     display: block;
-  }
-
-  #res-menu:checked ~ .nav-items {
-    top: 8%;
-  }
-}
-
-@media (max-width: 483px) {
-  label {
-    margin-right: 20px;
   }
 }
